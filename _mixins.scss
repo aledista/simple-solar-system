@@ -1,0 +1,25 @@
+@mixin orbit($name, $x) {
+  @keyframes #{$name}-orbit {
+    from {
+      transform: rotate(0deg) translateX($x) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translateX($x) rotate(-360deg);
+    }
+  }
+}
+
+@mixin dimension($x) {
+  border-radius: $x;
+  height: $x * 2;
+  width: $x * 2;
+}
+
+@mixin planet($x) {
+  @include dimension(map-get($x, 'radius'));
+  animation: #{map-get($x, 'name')}-orbit map-get($x, 'speed') infinite linear;
+  background-color: map-get($x, 'color');
+  left: 50%;
+  position: absolute;
+  top: 50%;
+}

@@ -1,0 +1,62 @@
+@import "mixins.scss";
+@import "variables.scss";
+@import "extensions.scss";
+
+body {
+  @extend %starry-night;
+}
+
+#sun {
+  background-color: #ffea54;
+  border-radius: 50px;
+  height: 80px;
+  left: calc(50% - 40px);
+  position: absolute;
+  top: calc(50% - 40px);
+  width: 80px;
+}
+
+#mercury {
+  @include planet($mercury);
+}
+
+#venus {
+  @include planet($venus);
+}
+
+#earth {
+  @include planet($earth);
+}
+
+#mars {
+  @include planet($mars);
+}
+
+#jupiter {
+  @include planet($jupiter);
+}
+
+#saturn {
+  @include planet($saturn);
+}
+
+#uranus {
+  @include planet($uranus);
+}
+
+#neptune {
+  @include planet($neptune);
+}
+
+#pluto {
+  @include planet($pluto);
+}
+
+@include orbit("venus", map-get($venus, 'orbit'));
+@include orbit("earth", map-get($earth, 'orbit'));
+@include orbit("mars", map-get($mars, 'orbit'));
+@include orbit("jupiter", map-get($jupiter, 'orbit'));
+@include orbit("saturn", map-get($saturn, 'orbit'));
+@include orbit("uranus", map-get($uranus, 'orbit'));
+@include orbit("neptune", map-get($neptune, 'orbit'));
+@include orbit("pluto", map-get($pluto, 'orbit'));

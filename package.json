@@ -1,12 +1,9 @@
 {
-  "name": "solar-system-css",
-  "repository": "https://github.com/aledista/solar-system-css",
+  "name": "simple-solar-system",
+  "repository": "https://github.com/aledista/simple-solar-system",
   "version": "0.0.1",
   "engines": {
     "node": "0.10.x"
-  },
-  "dependencies": {
-    "jquery": "2.1.3"
   },
   "devDependencies": {
     "gulp": "~3.8.11",

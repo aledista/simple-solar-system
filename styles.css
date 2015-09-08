@@ -19,9 +19,9 @@ body {
   width: 6px;
   animation: mercury-orbit 5s infinite linear;
   background-color: #ffac2e;
-  left: 50%;
+  left: calc(50% - 3px);
   position: absolute;
-  top: 50%; }
+  top: calc(50% - 3px); }
 
 #venus {
   border-radius: 4px;
@@ -29,9 +29,9 @@ body {
   width: 8px;
   animation: venus-orbit 7s infinite linear;
   background-color: #46ffb8;
-  left: 50%;
+  left: calc(50% - 4px);
   position: absolute;
-  top: 50%; }
+  top: calc(50% - 4px); }
 
 #earth {
   border-radius: 4px;
@@ -39,9 +39,9 @@ body {
   width: 8px;
   animation: earth-orbit 8s infinite linear;
   background-color: #5ca8ff;
-  left: 50%;
+  left: calc(50% - 4px);
   position: absolute;
-  top: 50%; }
+  top: calc(50% - 4px); }
 
 #mars {
   border-radius: 3px;
@@ -49,9 +49,9 @@ body {
   width: 6px;
   animation: mars-orbit 12s infinite linear;
   background-color: #ff2a37;
-  left: 50%;
+  left: calc(50% - 3px);
   position: absolute;
-  top: 50%; }
+  top: calc(50% - 3px); }
 
 #jupiter {
   border-radius: 20px;
@@ -59,9 +59,9 @@ body {
   width: 40px;
   animation: jupiter-orbit 18s infinite linear;
   background-color: #655123;
-  left: 50%;
+  left: calc(50% - 20px);
   position: absolute;
-  top: 50%; }
+  top: calc(50% - 20px); }
 
 #saturn {
   border-radius: 18px;
@@ -69,9 +69,9 @@ body {
   width: 36px;
   animation: saturn-orbit 19s infinite linear;
   background-color: #9f8037;
-  left: 50%;
+  left: calc(50% - 18px);
   position: absolute;
-  top: 50%; }
+  top: calc(50% - 18px); }
 
 #uranus {
   border-radius: 10px;
@@ -79,9 +79,9 @@ body {
   width: 20px;
   animation: uranus-orbit 23s infinite linear;
   background-color: #786b7a;
-  left: 50%;
+  left: calc(50% - 10px);
   position: absolute;
-  top: 50%; }
+  top: calc(50% - 10px); }
 
 #neptune {
   border-radius: 4px;
@@ -89,9 +89,9 @@ body {
   width: 8px;
   animation: neptune-orbit 25s infinite linear;
   background-color: #2f9a9f;
-  left: 50%;
+  left: calc(50% - 4px);
   position: absolute;
-  top: 50%; }
+  top: calc(50% - 4px); }
 
 #pluto {
   border-radius: 3px;
@@ -99,67 +99,11 @@ body {
   width: 6px;
   animation: pluto-orbit 30s infinite linear;
   background-color: #606060;
-  left: 50%;
+  left: calc(50% - 3px);
   position: absolute;
-  top: 50%; }
+  top: calc(50% - 3px); }
 
 @keyframes mercury-orbit {
-  from {
-    transform: rotate(0deg) translateX(60px) rotate(0deg); }
-
-  to {
-    transform: rotate(360deg) translateX(60px) rotate(-360deg); } }
-
-@keyframes venus-orbit {
-  from {
-    transform: rotate(0deg) translateX(60px) rotate(0deg); }
-
-  to {
-    transform: rotate(360deg) translateX(60px) rotate(-360deg); } }
-
-@keyframes earth-orbit {
-  from {
-    transform: rotate(0deg) translateX(60px) rotate(0deg); }
-
-  to {
-    transform: rotate(360deg) translateX(60px) rotate(-360deg); } }
-
-@keyframes mars-orbit {
-  from {
-    transform: rotate(0deg) translateX(60px) rotate(0deg); }
-
-  to {
-    transform: rotate(360deg) translateX(60px) rotate(-360deg); } }
-
-@keyframes jupiter-orbit {
-  from {
-    transform: rotate(0deg) translateX(60px) rotate(0deg); }
-
-  to {
-    transform: rotate(360deg) translateX(60px) rotate(-360deg); } }
-
-@keyframes saturn-orbit {
-  from {
-    transform: rotate(0deg) translateX(60px) rotate(0deg); }
-
-  to {
-    transform: rotate(360deg) translateX(60px) rotate(-360deg); } }
-
-@keyframes neptune-orbit {
-  from {
-    transform: rotate(0deg) translateX(60px) rotate(0deg); }
-
-  to {
-    transform: rotate(360deg) translateX(60px) rotate(-360deg); } }
-
-@keyframes uranus-orbit {
-  from {
-    transform: rotate(0deg) translateX(60px) rotate(0deg); }
-
-  to {
-    transform: rotate(360deg) translateX(60px) rotate(-360deg); } }
-
-@keyframes pluto-orbit {
   from {
     transform: rotate(0deg) translateX(60px) rotate(0deg); }
 

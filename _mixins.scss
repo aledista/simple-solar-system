@@ -19,7 +19,7 @@
   @include dimension(map-get($x, 'radius'));
   animation: #{map-get($x, 'name')}-orbit map-get($x, 'speed') infinite linear;
   background-color: map-get($x, 'color');
-  left: 50%;
+  left: calc(50% - #{map-get($x, 'radius')});
   position: absolute;
-  top: 50%;
+  top: calc(50% - #{map-get($x, 'radius')});
 }

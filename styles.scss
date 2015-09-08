@@ -52,6 +52,7 @@ body {
   @include planet($pluto);
 }
 
+@include orbit("mercury", map-get($mercury, 'orbit'));
 @include orbit("venus", map-get($venus, 'orbit'));
 @include orbit("earth", map-get($earth, 'orbit'));
 @include orbit("mars", map-get($mars, 'orbit'));
